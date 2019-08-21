@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.lls.lemon.LemonAutoConfigure, \
+  com.lls.lemon.db.DataSourceConfigurer,\
+  com.lls.lemon.db.DbSwitcher
+

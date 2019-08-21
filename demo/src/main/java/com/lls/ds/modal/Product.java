@@ -1,4 +1,4 @@
-package com.lls.lemon.ds.modal;
+package com.lls.ds.modal;
 
 import java.io.Serializable;
 

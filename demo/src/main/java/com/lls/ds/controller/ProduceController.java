@@ -1,7 +1,7 @@
-package com.lls.lemon.ds.controller;
+package com.lls.ds.controller;
 
-import com.lls.lemon.ds.modal.Product;
-import com.lls.lemon.ds.service.ProductService;
+import com.lls.ds.modal.Product;
+import com.lls.ds.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

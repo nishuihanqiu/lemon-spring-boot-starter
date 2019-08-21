@@ -1,4 +1,4 @@
-package com.lls.lemon.ds.configuration;
+package com.lls.ds.configuration;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

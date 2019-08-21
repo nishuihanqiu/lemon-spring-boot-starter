@@ -1,4 +1,4 @@
-package com.lls.lemon.ds.configuration;
+package com.lls.ds.configuration;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
@@ -23,7 +23,7 @@ public class DynamicDataSourceAspect {
     /**
      * Dao aspect.
      */
-    @Pointcut("execution( * com.lls.lemon.ds.mapper.*.*(..))")
+    @Pointcut("execution( * com.lls.ds.mapper.*.*(..))")
     public void daoAspect() {
     }
 

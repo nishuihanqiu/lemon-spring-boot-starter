@@ -1,0 +1,24 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.7.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+}
+
+group = 'com.lls'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compile("com.lls:lemon-spring-boot-starter:0.0.1-SNAPSHOT")
+    compile('org.springframework.boot:spring-boot-starter')
+    compile("org.springframework.boot:spring-boot-starter-web:2.1.7.RELEASE")
+    compile("org.springframework.boot:spring-boot-starter-aop:2.1.7.RELEASE")
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}

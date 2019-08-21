@@ -1,7 +1,7 @@
-package com.lls.lemon.ds.service;
+package com.lls.ds.service;
 
-import com.lls.lemon.ds.mapper.ProductDao;
-import com.lls.lemon.ds.modal.Product;
+import com.lls.ds.mapper.ProductDao;
+import com.lls.ds.modal.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;

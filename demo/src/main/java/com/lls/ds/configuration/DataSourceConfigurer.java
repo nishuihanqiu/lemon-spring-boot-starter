@@ -1,6 +1,6 @@
-package com.lls.lemon.ds.configuration;
+package com.lls.ds.configuration;
 
-import com.lls.lemon.ds.common.DataSourceKey;
+import com.lls.ds.common.DataSourceKey;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;

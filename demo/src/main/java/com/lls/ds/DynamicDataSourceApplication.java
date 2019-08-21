@@ -1,4 +1,4 @@
-package com.lls.lemon.ds;
+package com.lls.ds;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

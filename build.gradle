@@ -1,0 +1,79 @@
+plugins {
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+    id 'maven'
+    id 'maven-publish'
+    id 'idea'
+}
+
+group = 'com.lls'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter')
+    compile("org.springframework.boot:spring-boot-starter-web:2.1.7.RELEASE")
+    compile("org.springframework.boot:spring-boot-starter-aop:2.1.7.RELEASE")
+    compile 'org.springframework.boot:spring-boot-autoconfigure:2.1.7.RELEASE'
+    compile("org.springframework.boot:spring-boot-configuration-processor:2.1.7.RELEASE")
+
+    compile("org.slf4j:slf4j-api:1.7.25")
+    compile("org.slf4j:log4j-over-slf4j:1.7.25")
+    compile("org.slf4j:jcl-over-slf4j:1.7.25")
+    compile("org.apache.commons:commons-lang3:3.0")
+    compile('com.alibaba:druid:1.1.6')
+    compile("mysql:mysql-connector-java:5.1.47")
+    compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.1")
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.1.7.RELEASE'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.lls'
+            artifactId = 'lemon-spring-boot-starter'
+
+            from components.java
+
+            pom {
+                name = 'lemon-spring-boot-starter'
+                description = 'lemon-spring-boot-starter for spring boot starter'
+                url = 'https://github.com/li-liangshan/lemon-spring-boot-starter'
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'lls'
+                        name = 'li liangshan'
+                        email = 'liliangshanlls@gmail.com'
+                    }
+                }
+                scm {
+                    connection = 'scm:git:git://github.com/li-liangshan/lemon-spring-boot-starter.git'
+                    developerConnection = 'scm:git:ssh://github.com/li-liangshan/lemon-spring-boot-starter.git'
+                    url = 'https://github.com/li-liangshan/lemon-spring-boot-starter'
+                }
+            }
+
+            versionMapping {
+                usage('java-api') {
+                    fromResolutionOf('runtimeClasspath')
+                }
+                usage('java-runtime') {
+                    fromResolutionResult()
+                }
+            }
+        }
+    }
+}

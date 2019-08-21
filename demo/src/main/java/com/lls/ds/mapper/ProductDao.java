@@ -1,6 +1,6 @@
-package com.lls.lemon.ds.mapper;
+package com.lls.ds.mapper;
 
-import com.lls.lemon.ds.modal.Product;
+import com.lls.ds.modal.Product;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;

@@ -1,7 +1,7 @@
-package com.lls.lemon.ds.configuration;
+package com.lls.ds.configuration;
 
 
-import com.lls.lemon.ds.common.DataSourceKey;
+import com.lls.ds.common.DataSourceKey;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
